@@ -1,0 +1,158 @@
+/*css reset*/
+html {
+ box-sizing: border-box;
+ font-size: 16px;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+ margin: 0;
+ padding: 0;
+ font-weight: normal;
+}
+
+ol, ul {
+ list-style: none;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+/*code*/
+body {
+ background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ height: 525px;
+ width: 300px;
+ padding: 15px;
+ background-color: hsl(216, 50%, 16%);
+ overflow: hidden;
+ border-radius: 10px;
+ box-shadow: 0 0 50px 20px  hsl(214, 41%, 7%);
+ display: flex;
+ flex-direction: column;
+}
+
+.img-wrapper, .overlay {
+ width: 270px;
+ height: 270px;
+ border-radius: 10px;
+ overflow: hidden;
+}
+
+.overlay {
+ background-color: hsl(178, 100%, 50%);
+ position: absolute;
+ top: 29%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ opacity: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.overlay:hover {
+ opacity: 0.65;
+ cursor: pointer;
+}
+
+.icon-view {
+ width: 50px;
+ height: 50px;
+}
+
+.content, .footer {
+ font-family: 'Outfit', sans-serif;
+ font-size: 18px;
+ color:hsl(0, 0%, 100%);
+}
+
+.content {
+ margin: 30px 0;
+ height: 120px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+
+header {
+ font-weight: 600;
+ padding-bottom: 15px;
+}
+
+.description {
+ font-weight: 300;
+ color: hsl(215, 51%, 70%);
+ font-size: 16px;
+}
+
+.price {
+ color: hsl(178, 100%, 50%);
+}
+
+.time {
+ color: hsl(215, 51%, 70%);
+}
+
+.price, .time {
+ font-weight: 400;
+ display: flex;
+ align-items: center;
+}
+
+.icon-additional {
+ width: auto;
+ height: 15px;
+ margin-right: 4px;
+}
+
+.additional {
+ display: flex;
+ justify-content: space-between;
+ font-size: 14px;
+ margin: 5px 0;
+ padding: 20px 0;
+ border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.footer {
+ display: flex;
+ align-items: center;
+}
+
+.avatar-wrapper {
+ border: 1px solid hsl(0, 0%, 100%);
+ border-radius: 50%;
+ display: inline-flex;
+}
+
+.avatar {
+ width: 30px;
+}
+
+.autor, .name {
+ font-size: 16px;
+ padding-left: 5px;
+}
+
+.autor {
+ padding-left: 15px;
+ color: hsl(215, 51%, 70%);
+}
+
+header:hover, .name:hover {
+ color:hsl(178, 100%, 50%);
+ cursor: pointer;
+}
